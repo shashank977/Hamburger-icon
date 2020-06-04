@@ -1,0 +1,46 @@
+.container{
+    position: absolute;
+    left: 50vw;
+    right: 50vh;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#bar1,#bar2,#bar3{
+
+    width: 37px;
+    height: 10px;
+    border-radius: 4px;
+    background-color:black;
+}
+
+#bar1{
+    transition: opacity 0.3s linear
+}
+
+.container:hover #bar1{
+    opacity: 0%;
+}
+
+#bar2{
+    transition: opacity 0.5s linear;
+}
+
+.container:hover #bar2{
+    transform: rotate(45deg);
+}
+
+#bar3{
+    transition: opacity 0.5s linear;
+}
+
+.container:hover  #bar3{
+    transform:  translateY(-17px) rotate(-45deg);
+
+}
